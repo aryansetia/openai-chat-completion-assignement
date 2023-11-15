@@ -1,0 +1,7 @@
+.env
+main.db 
+logs/ 
+pycache/
+migrations/
+env/
+__pycache__/
