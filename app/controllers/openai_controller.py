@@ -87,7 +87,7 @@ def openai_completion():
     data = request.get_json()
 
     # Check if the JSON data is valid and contains the 'prompt' field
-    if not data or 'prompt' not in data or len(data['prompt']) <= 0:
+    if not data or 'prompt' not in data or len(data['prompt']) == 0:
         return jsonify({'error': 'Invalid JSON data or missing "prompt" field or missing "user_id" field'}), 400
     
     if 'user_id' not in data or not isinstance(data['user_id'], int):
