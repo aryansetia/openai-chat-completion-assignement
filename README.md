@@ -84,18 +84,20 @@ Request - 3 (Missing parameters)
     "prompt": "Hi, how are you?"
 }
 ```
+Response - 3
 ```json
 {
     "error": "Missing or invalid \"user_id\" field"
 }
 ```
-Request - 4 
+Request - 4 (Empty prompt field)
 ```json
 {
     "user_id": 2,
     "prompt": ""
 }
 ```
+Response - 4
 ```json
 {
     "error": "Invalid JSON data or missing \"prompt\" field or missing \"user_id\" field"
